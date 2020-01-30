@@ -1,0 +1,141 @@
+// Imports
+@use 'colors'
+@use 'fonts'
+
+// Mixins 
+@mixin headers()
+    
+
+// Styles
+body
+    margin: 0 auto
+    background-image: url('../images/email-pattern.png')
+    color: colors.$bgcolor
+    font-family: fonts.$open-sans
+    font-size: 24px
+
+h1
+    color: colors.$hcolor
+    font-size: 48px
+    font-family: fonts.$playfair
+    text-transform: uppercase
+
+h2, h3, h4, h5, h6
+    color: colors.$hcolor
+    font-family: fonts.$playfair
+
+p
+    font: fonts.$open-sans
+    color: colors.$bgcolor
+
+main
+    padding-top: 200px
+    position: absolute
+    top: 450px  
+    left: 160px
+    width: 1120px
+    height: 950px
+
+ul 
+    list-style: none 
+    padding: 0
+
+a 
+    color: colors.$acolor
+
+    &:hover 
+        text-transform: uppercase
+
+
+.head-shot
+    border-radius: 50%
+    position: absolute
+    top: 20%
+    left: 268px
+    width: 336px
+    height: 336px
+
+
+.hero-image
+    background-image: url('/images/deskMock.jpg')
+    height: 65%
+    background-position: bottom
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    transition: 0.2s
+
+.layer
+    position: absolute
+    top: 50px
+    left: 0
+    width: 100%
+    height: 500px
+    background-color: colors.$bgcolor
+    opacity: 0.45
+
+.hero-container
+    display: flex
+    height: 50%
+    width: 100%
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-items: center
+    padding-top: 90px
+
+    div
+        color: colors.$textcolor
+        width: 30%
+
+    p
+        color: colors.$textcolor
+        font-family: fonts.$open-sans
+
+    .hero-text
+        position: absolute
+        top: 180px
+        left: 758px
+        width: 447px
+        height: 83px
+
+#section-header
+    text-transform: uppercase
+    font-size: 28px
+    text-align: left
+
+
+.profile-container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-content: space-between
+    align-items: center
+    width: 100%
+    padding: 10px
+
+    .col
+        margin: 0 auto
+        width: 100%
+        padding-right: 20px
+        padding-bottom: 100px
+        top: 510px
+        left: 175px
+        width: 471px
+        height: 183px
+        font-size: 18px
+        font-weight: 400px
+
+    button
+        background-color: colors.$acolor
+        color: colors.$textcolor
+        font-family: fonts.$playfair
+        font-size: 18px
+        text-transform: uppercase 
+        width: 200px
+        height: 50px
+        margin-top: 15px
+        border-radius: 8px
+        border: solid colors.$hcolor 1px
+        
+
