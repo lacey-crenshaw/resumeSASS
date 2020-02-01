@@ -8,14 +8,15 @@ body {
 
 h1 {
   color: #ff6d7e;
-  font-size: 48px;
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
+  font-size: 48px;
 }
 
 h2, h3, h4, h5, h6 {
   color: #ff6d7e;
   font-family: "Playfair Display", serif;
+  text-transform: uppercase;
 }
 
 p {
@@ -39,9 +40,6 @@ ul {
 
 a {
   color: #fb8996;
-}
-a:hover {
-  text-transform: uppercase;
 }
 
 .head-shot {
@@ -127,8 +125,8 @@ a:hover {
   font-weight: 400px;
 }
 .profile-container button {
-  background-color: #fb8996;
   color: #f4f4f4;
+  background-color: #fb8996;
   font-family: "Playfair Display", serif;
   font-size: 18px;
   text-transform: uppercase;
@@ -137,6 +135,12 @@ a:hover {
   margin-top: 15px;
   border-radius: 8px;
   border: solid #ff6d7e 1px;
+}
+@extend--hover {
+  .profile-container button {
+    height: 100px;
+    background-color: #232325;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
