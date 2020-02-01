@@ -105,26 +105,19 @@ a {
 
 .profile-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between;
   align-items: center;
+  align-content: center;
   width: 100%;
-  padding: 10px;
+  margin: 0;
 }
 .profile-container .col {
-  margin: 0 auto;
-  width: 100%;
-  padding-right: 20px;
-  padding-bottom: 100px;
-  top: 510px;
-  left: 175px;
-  width: 471px;
-  height: 183px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400px;
 }
-.profile-container button {
+.profile-container .button {
   color: #f4f4f4;
   background-color: #fb8996;
   font-family: "Playfair Display", serif;
@@ -134,13 +127,13 @@ a {
   height: 50px;
   margin-top: 15px;
   border-radius: 8px;
-  border: solid #ff6d7e 1px;
+  border: solid #fb8996 1px;
+  cursor: pointer;
 }
-@extend--hover {
-  .profile-container button {
-    height: 100px;
-    background-color: #232325;
-  }
+
+.button:hover {
+  opacity: 50%;
+  border: solid #f4f4f4 4px;
 }
 
 /*# sourceMappingURL=styles.css.map */
